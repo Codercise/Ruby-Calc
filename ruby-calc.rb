@@ -1,4 +1,6 @@
 def menu
+	# This is the menu, it prints a bunch of options then requests user input. Each choice corresponds to
+	# an action
 	puts "Welcome to the Carsekyx Calculator"
 	puts " "
 	puts "1 - Addition"
@@ -12,6 +14,8 @@ def menu
 end
 
 def add(a, b)
+	# Addition Method, converts strings from user input to integers then does the math and prints 
+	# the results
 	a_string = a.to_s.chomp
 	b_string = b.to_s.chomp
 	a_int = a.chomp.to_i
@@ -22,6 +26,8 @@ def add(a, b)
 end
 
 def subtract(a, b)
+	# Subtraction Method, converts strings from user input to integers then does the math and prints 
+	# the results
 	a_string = a.to_s.chomp
 	b_string = b.to_s.chomp
 	a_int = a.chomp.to_i
@@ -32,6 +38,8 @@ def subtract(a, b)
 end
 
 def multiply(a, b)
+	# Multiplication Method, converts strings from user input to integers then does the math and prints 
+	# the results
 	a_string = a.to_s.chomp
 	b_string = b.to_s.chomp
 	a_int = a.chomp.to_i
@@ -42,6 +50,8 @@ def multiply(a, b)
 end
 
 def divide(a, b)
+	# Division Method, converts strings from user input to integers then does the math and prints 
+	# the results
 	a_string = a.to_s.chomp
 	b_string = b.to_s.chomp
 	a_int = a.chomp.to_i
@@ -53,6 +63,8 @@ end
 
 $loop = 1
 $choice = 0
+# Loop continues while the user continues to choose options. The menu method reprints after every 
+# equation, for the user to exit they chose option 5 on the menu. 
 while $loop = 1
 	menu()
 
@@ -92,6 +104,6 @@ while $loop = 1
 	elsif $choice == '5'
 		$loop = 0
 		puts " "
-		abort "Ciao Mi Amigo, Thanks for using Carsekyx Calculator"
+		abort "Ciao Mi Amigo, Thanks for using Carsekyx Calculator" #exits program
 	end
 end
