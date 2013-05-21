@@ -1,7 +1,7 @@
 def menu
 	# This is the menu, it prints a bunch of options then requests user input. Each choice corresponds to
 	# an action
-	puts "Welcome to the Carsekyx Calculator"
+	puts "Welcome to the my calculator"
 	puts " "
 	puts "1 - Addition"
 	puts "2 - Subtraction"
@@ -104,6 +104,6 @@ while $loop = 1
 	elsif $choice == '5'
 		$loop = 0
 		puts " "
-		abort "Ciao Mi Amigo, Thanks for using Carsekyx Calculator" #exits program
+		abort "Ciao Mi Amigo, Thanks for using my calculator" #exits program
 	end
 end
